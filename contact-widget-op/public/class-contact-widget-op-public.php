@@ -103,6 +103,10 @@ class Contact_Widget_Op_Public {
 		//Shortcode what will be displayed on front end
 		public function contact_widget_public() {
 
+		add_shortcode( 'contact_widget','contact_widget_function'  );
+
+		function contact_widget_function() {
+
 			// Get option checkbox value
 			$checkLive = get_option( 'SetToBeLive' );
 		
@@ -2000,5 +2004,6 @@ class Contact_Widget_Op_Public {
 		
 				endif; // End of checking if contact widget is set to be on live mode
 			}
+		}
 
 }

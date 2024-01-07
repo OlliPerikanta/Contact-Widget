@@ -180,7 +180,7 @@ class Contact_Widget_Op {
 		$this->loader->add_action( 'wp_enqueue_scripts', $plugin_public, 'enqueue_scripts' );
 
 		//Add shortcode
-		$this->loader->add_shortcode( 'contact_widget', $plugin_public, 'contact_widget_public' );
+		$this->loader->add_action( 'init', $plugin_public, 'contact_widget_public' );
 
 	}
 

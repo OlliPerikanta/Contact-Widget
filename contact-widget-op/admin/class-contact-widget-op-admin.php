@@ -107,7 +107,7 @@ class Contact_Widget_Op_Admin {
 	 */
 	public function contact_widget_menu_item() {
 
-		add_menu_page('Contact Widget', 'Contact Widget', 'manage_options', 'contact-qidget-op/settings.php', array($this, 'contact_widget_admin_page'), 'dashicons-format-contact', 250);
+		add_menu_page('Contact Widget', 'Contact Widget', 'manage_options', 'contact-qidget-op/settings.php', array($this, 'contact_widget_admin_page'), 'dashicons-format-chat', 250);
 	}
 
 	public function contact_widget_admin_page(){
